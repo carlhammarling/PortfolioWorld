@@ -1,0 +1,105 @@
+.worldNav {
+  font-family: "Holtwood One SC", serif;
+
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: rgb(57, 228, 252);
+  background: radial-gradient(
+    circle,
+    rgba(57, 228, 252, 1) 60%,
+    rgb(9, 116, 155) 100%
+  );
+  border-radius: 50%;
+  margin-block: 90px;
+  box-shadow: 0px 0px 70px 0px #43fff2c1;
+  bottom: 0;
+  transition: 1s ease-in-out;
+
+  &:hover {
+    bottom: -250px;
+  }
+
+  @keyframes oscillate {
+    0%,
+    100% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px); // Adjust the distance of oscillation
+    }
+  }
+
+  animation: oscillate 1s infinite; // Adjust the duration of the animation
+
+  svg.country {
+    width: 50%;
+  }
+
+  nav {
+    position: absolute;
+    top: -120px;
+    left: -20px;
+    z-index: 2;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      text-align: center;
+      transform: rotate(-3deg);
+      color: rgb(84, 53, 3);
+
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            color: bisque;
+        }
+      }
+
+      li#nav1 {
+        width: 155px;
+        height: 43px;
+        margin-left: 35px;
+        margin-top: 30px;
+        font-size: 1.4rem;
+        // border: 1px solid white;
+      }
+      li#nav2 {
+        width: 155px;
+        height: 43px;
+        margin-left: 85px;
+        margin-top: 5px;
+        font-size: 1.2rem;
+        // border: 1px solid white;
+      }
+      li#nav3 {
+        width: 150px;
+        height: 43px;
+        margin-left: 35px;
+        margin-top: 7px;
+        // border: 1px solid white;
+      }
+      li#nav4 {
+        width: 100px;
+        height: 43px;
+        margin-left: 110px;
+        margin-top: 2px;
+        font-size: .8rem;
+
+        // border: 1px solid white;
+      }
+    }
+
+    img.skyltar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+}
