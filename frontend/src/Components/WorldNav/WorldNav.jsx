@@ -2,9 +2,12 @@ import React from "react";
 import "./WorldNav.scss";
 import skyltar from "../../assets/skyltar.png";
 
-const WorldNav = () => {
+const WorldNav = ({ setNavigation, navigation }) => {
+
+
   return (
-    <div className="worldNav">
+    // <div className="worldNav">
+    <div className={`worldNav ${navigation}`}>
       <svg
         className="country"
         xmlns="http://www.w3.org/2000/svg"
@@ -144,10 +147,10 @@ const WorldNav = () => {
 
       <nav>
         <ul>
-            <li id="nav1">Home</li>
-            <li id="nav2">About</li>
-            <li id="nav3">Projects</li>
-            <li id="nav4">Contact</li>
+            <li id="nav1" className={navigation === 'homeNav' ? 'active' : ''} onClick={() => setNavigation('homeNav')}>Home</li>
+            <li id="nav2" className={navigation === 'aboutNav' ? 'active' : ''} onClick={() => setNavigation('aboutNav')}>About</li>
+            <li id="nav3" className={navigation === 'projectsNav' ? 'active' : ''} onClick={() => setNavigation('projectsNav')}>Projects</li>
+            <li id="nav4" className={navigation === 'contactNav' ? 'active' : ''} onClick={() => setNavigation('contactNav')}>Contact</li>
         </ul>
         <img className="skyltar" src={skyltar} alt="" />
       </nav>

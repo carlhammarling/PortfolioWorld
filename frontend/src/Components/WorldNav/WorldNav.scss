@@ -1,6 +1,5 @@
 .worldNav {
   font-family: "Holtwood One SC", serif;
-
   position: relative;
   width: 300px;
   height: 300px;
@@ -13,11 +12,21 @@
   border-radius: 50%;
   margin-block: 90px;
   box-shadow: 0px 0px 70px 0px #43fff2c1;
-  bottom: 0;
+  bottom: -200px;
   transition: 1s ease-in-out;
+  right: 0;
 
-  &:hover {
-    bottom: -250px;
+  &.aboutNav {
+    bottom: -450px;
+    width: 330px;
+  height: 330px;
+  }
+  &.projectsNav {
+    bottom: 170px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+
   }
 
   @keyframes oscillate {
@@ -55,8 +64,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
-        &:hover {
+
+        &.active {
             color: bisque;
         }
       }

@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home.scss";
 import Header from "../../Components/Header/Header";
 import world from "../../assets/world.png";
 import WorldNav from "../../Components/WorldNav/WorldNav";
 
 const Home = () => {
+
+  const [navigation, setNavigation] = useState('homeNav')
+
+  useEffect(() => {
+    console.log(navigation)
+  }, [navigation])
+  
   return (
-    <>
+    <div className="wrapper">
       <div className="home">
         <Header />
         <div className="welcome">
@@ -19,9 +26,9 @@ const Home = () => {
        
       </div>
       <div className="world">
-        <WorldNav />
+        <WorldNav setNavigation={setNavigation} navigation={navigation} />
       </div>
-    </>
+    </div>
   );
 };
 
