@@ -1,0 +1,64 @@
+.about {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+
+  opacity: 1; /* Initially hidden */
+  animation: fadeAnimation .7s ease-in-out;
+
+  @keyframes fadeAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes heightAnimation {
+    0% { height: 0%; }
+    100% { height: 100%; }
+  }
+
+  h2 {
+    font-family: "Holtwood One SC", serif;
+    font-size: 30px;
+    color: rgb(222, 221, 221);
+  }
+
+  .aboutText {
+    display: flex;
+    animation: heightAnimation 1s ease-in-out;
+overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid transparent; /* Set border width and make it transparent */
+    border-image: linear-gradient(
+        150deg,
+        rgba(0, 178, 39, 1) 0%,
+        rgba(37, 101, 137, 1) 15%,
+        rgba(78, 80, 112, 0) 30%,
+        rgba(128, 53, 81, 0) 69%,
+        rgba(169, 32, 56, 1) 84%,
+        rgba(156, 0, 182, 1) 100%
+      )
+      10;
+
+    padding: 1.2rem;
+    gap: 1rem;
+
+    p {
+      font-size: 18px;
+      font-weight: 200;
+
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    a {
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: white;
+    }
+  }
+}

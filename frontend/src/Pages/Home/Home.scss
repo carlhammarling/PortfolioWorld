@@ -19,40 +19,7 @@
     rgba(0, 0, 0, 1) 100%
   );
 
-  .welcome {
-    h2 {
-      color: black;
-      -webkit-text-stroke: 1px rgb(255, 255, 255); /* Width and color of the outline */
-    }
-    display: flex;
-    justify-content: center;
-    border: 1px solid transparent; /* Set border width and make it transparent */
-    border-image: linear-gradient(
-        150deg,
-        rgba(0, 178, 39, 1) 0%,
-        rgba(37, 101, 137, 1) 15%,
-        rgba(78, 80, 112, 0) 30%,
-        rgba(128, 53, 81, 0) 69%,
-        rgba(169, 32, 56, 1) 84%,
-        rgba(156, 0, 182, 1) 100%
-      )
-      10;
-    color: rgb(222, 221, 221);
-    line-height: 1.1;
-
-    padding: 1.2rem;
-
-    h3 {
-      font-family: "Holtwood One SC", serif;
-      font-size: 40px;
-    }
-
-    .myWorld {
-      font-size: 20px;
-      letter-spacing: 12px;
-      text-indent: 11px;
-    }
-  }
+  
 }
 
 .world {
