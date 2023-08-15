@@ -1,0 +1,12 @@
+@import "./variables";
+
+@mixin spaceCard {
+  background-color: #ffffff08;
+  background: linear-gradient(18deg, rgba(255,255,255,0.057882528011204526) 0%, rgba(255,255,255,0.0214679621848739) 15%, rgba(255,255,255,0.057882528011204526) 44%, rgba(255,255,255,0.03267244397759106) 70%, rgba(255,255,255,0.04947916666666663) 100%);
+  width: 100%;
+  backdrop-filter: blur(3px);
+  border: 2px solid transparent; /* Set border width and make it transparent */
+  border-radius: 2px;
+  border-image: $borderGradient;
+  padding: 1rem;
+}

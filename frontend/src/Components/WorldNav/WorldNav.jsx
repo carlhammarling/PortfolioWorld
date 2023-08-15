@@ -1,6 +1,8 @@
 import React from "react";
 import "./WorldNav.scss";
 import skyltar from "../../assets/skyltar.png";
+import { motion } from "framer-motion"
+
 
 const WorldNav = ({ setNavigation, navigation }) => {
 
@@ -154,6 +156,10 @@ const WorldNav = ({ setNavigation, navigation }) => {
         </ul>
         <img className="skyltar" src={skyltar} alt="" />
       </nav>
+      <div className="moon"></div>
+      <div className="moon2"></div>
+  
+
     </div>
   );
 };

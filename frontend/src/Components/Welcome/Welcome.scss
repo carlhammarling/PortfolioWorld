@@ -1,43 +1,52 @@
+@use "../../styles/mixin";
+
 .welcome {
-    align-self: center;
-    width: 100%;
-    h2 {
-      color: black;
-      -webkit-text-stroke: 1px rgb(255, 255, 255); /* Width and color of the outline */
-    }
-    display: flex;
-    justify-content: center;
-    border: 2px solid transparent; /* Set border width and make it transparent */
-    border-image: linear-gradient(
-        150deg,
-        rgba(0, 178, 39, 1) 0%,
-        rgba(37, 101, 137, 1) 15%,
-        rgba(78, 80, 112, 0) 30%,
-        rgba(128, 53, 81, 0) 69%,
-        rgba(169, 32, 56, 1) 84%,
-        rgba(156, 0, 182, 1) 100%
-      )
-      10;
-    color: rgb(222, 221, 221);
-    line-height: 1.1;
+  @include mixin.spaceCard;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  z-index: 3;
+  color: rgb(222, 221, 221);
+  line-height: 1;
+  padding: 2rem;
 
-    padding: 1.2rem;
+  animation: fadeAnimation 0.7s ease-in-out;
 
-    animation: fadeAnimation .7s ease-in-out;
+  p.name {
+    font-size: 10.2px;
+  }
+
+  h2.greetings {
+    color: transparent;
+    font-size: 14px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /* Width and color of the outline */
+  }
 
   @keyframes fadeAnimation {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
+  .jumpy {
+    display: flex;
     h3 {
       font-family: "Holtwood One SC", serif;
-      font-size: 40px;
-    }
+      font-size: 36px;
+      transition: 0.05s ease-in-out;
 
-    .myWorld {
-      font-size: 20px;
-      letter-spacing: 12px;
-      text-indent: 11px;
+      &:hover {
+        color: white;
+      }
     }
   }
+
+  .myWorld {
+    font-size: 16px;
+    letter-spacing: 12px;
+    text-indent: 11px;
+  }
+}

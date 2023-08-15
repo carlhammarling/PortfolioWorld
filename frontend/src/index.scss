@@ -1,11 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-//     font-family: 'Holtwood One SC', serif;
-font-family: 'Saira', sans-serif;
-// font-family: 'Saira Condensed', sans-serif;
+  //     font-family: 'Holtwood One SC', serif;
+  font-family: "Saira", sans-serif;
+  // font-family: 'Saira Condensed', sans-serif;
+
+  h2 {
+    font-family: "Holtwood One SC", serif;
+    color: rgb(222, 221, 221);
+    font-size: 25px;
+    &:hover {
+      color: white;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 200;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  a {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+  }
 }

@@ -1,23 +1,17 @@
 import React from "react";
-import "./About.scss";
+import "./Contact.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const About = ({ navigation }) => {
+const Contact = ({ navigation }) => {
   return (
-    <div className="about" >
-      <div className="aboutH2">
+    <div className="contact">
+      <div className="contactH2">
         <motion.h2
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 1200, damping: 5 }}
         >
-          A
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          b
+          C
         </motion.h2>
         <motion.h2
           whileHover={{ scale: 1.1 }}
@@ -29,29 +23,51 @@ const About = ({ navigation }) => {
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 1200, damping: 5 }}
         >
-          u
+          n
         </motion.h2>
         <motion.h2
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 1200, damping: 5 }}
         >
-          t</motion.h2>
+          t
+        </motion.h2>
+        <motion.h2
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
+        >
+          a
+        </motion.h2>
+        <motion.h2
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
+        >
+          c
+        </motion.h2>
+        <motion.h2
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
+        >
+          t
+        </motion.h2>
       </div>
 
-      <motion.div className="aboutText" drag dragSnapToOrigin dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}>
+      <motion.div
+        className="contactText"
+        drag
+        dragSnapToOrigin
+        dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+      >
         <p>
-          <span> Hi! I am Carl</span>, a 34 year old frontend developer who has
-          creativity inscripted in my geenes.
+          <span> Hey, write me a message!</span>, or even easier, connect with me on social media.
         </p>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
 
-        <p>
-          I have been experimenting with design, art and music for as long as I
-          can remember, and I really love what I am doing!
-        </p>
         <Link to="">SEE MORE</Link>
       </motion.div>
     </div>
   );
 };
 
-export default About;
+export default Contact;

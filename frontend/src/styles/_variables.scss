@@ -1,0 +1,26 @@
+$borderGradient: linear-gradient(
+    150deg,
+    rgba(0, 178, 39, 1) 0%,
+    rgba(37, 101, 137, 1) 15%,
+    rgba(78, 80, 112, 0) 30%,
+    rgba(128, 53, 81, 0) 69%,
+    rgba(169, 32, 56, 1) 84%,
+    rgba(156, 0, 182, 1) 100%
+  )
+  10;
+
+  $spaceBackground: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(49, 54, 42) 32%,
+    rgb(60, 42, 65) 66%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  
+  $spaceBackground2: linear-gradient(
+    180deg,
+    rgb(20, 20, 20) 0%,
+    rgb(38, 42, 32) 32%,
+    rgb(39, 27, 42) 66%,
+    rgb(25, 25, 25) 100%
+  );

@@ -1,0 +1,25 @@
+@use "../../styles/mixin";
+
+.projectCard2 {
+  @include mixin.spaceCard;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  gap: 1rem;
+
+  animation: heightAnimation 1s ease-in-out;
+
+  span {
+    text-decoration: underline;
+    color: white;
+  }
+
+  a {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+  }
+}

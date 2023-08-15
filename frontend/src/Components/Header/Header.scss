@@ -1,8 +1,11 @@
 .header {
     align-self: flex-start;
-    padding-bottom: 55px;
+    padding-bottom: 40px;
+    z-index: 3;
+
   p {
     color: rgb(219, 219, 219);
+    font-size: 12px;
 
     font-weight: 300;
   }
@@ -11,7 +14,7 @@
   
 
   .logo2 {
-    font-size: 12px;
+    font-size: 8.5px;
     letter-spacing: 1px;
   }
 }

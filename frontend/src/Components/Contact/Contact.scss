@@ -1,7 +1,7 @@
 @use "../../styles/mixin";
 @import "../../styles/variables";
 
-.about {
+.contact {
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,11 @@
     }
   }
 
-  .aboutH2 {
+  .contactH2 {
     display: flex;
   }
 
-  .aboutText {
+  .contactText {
     @include mixin.spaceCard;
     display: flex;
     justify-content: center;
@@ -42,5 +42,17 @@
 
     animation: heightAnimation 1s ease-in-out;
 
+    a {
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: white;
+    }
+
+    input {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.569);
+      padding: 5px;
+    }
   }
 }
