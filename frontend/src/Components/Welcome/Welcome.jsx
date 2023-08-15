@@ -10,7 +10,7 @@ const Welcome = () => {
     <motion.div className="welcome" drag dragSnapToOrigin dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}>
       <div className="welcomeText">
         {/* <h2 className="greetings">Greetings my friend,</h2> */}
-        <p className="name">CARL HAMMARLING - FRONTEND DEVELOPER</p>
+        {/* <p className="name">CARL HAMMARLING - FRONTEND DEVELOPER</p> */}
         <div className="jumpy">
           <motion.h3
             whileHover={{ scale: 1.2 }}

@@ -9,18 +9,29 @@ $borderGradient: linear-gradient(
   )
   10;
 
-  $spaceBackground: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgb(49, 54, 42) 32%,
-    rgb(60, 42, 65) 66%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  
-  $spaceBackground2: linear-gradient(
-    180deg,
-    rgb(20, 20, 20) 0%,
-    rgb(38, 42, 32) 32%,
-    rgb(39, 27, 42) 66%,
-    rgb(25, 25, 25) 100%
-  );
+$spaceBackground: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 1) 0%,
+  rgb(49, 54, 42) 32%,
+  rgb(60, 42, 65) 66%,
+  rgba(0, 0, 0, 1) 100%
+);
+
+$spaceBackground2: linear-gradient(
+  180deg,
+  rgb(20, 20, 20) 0%,
+  rgb(38, 42, 32) 32%,
+  rgb(39, 27, 42) 66%,
+  rgb(25, 25, 25) 100%
+);
+
+$seeThrueWhite: linear-gradient(
+  18deg,
+  rgba(255, 255, 255, 0.057882528011204526) 0%,
+  rgba(255, 255, 255, 0.0214679621848739) 15%,
+  rgba(255, 255, 255, 0.057882528011204526) 44%,
+  rgba(255, 255, 255, 0.03267244397759106) 70%,
+  rgba(255, 255, 255, 0.04947916666666663) 100%
+);
+
+$grayFont: rgb(222, 221, 221);

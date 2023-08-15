@@ -1,0 +1,56 @@
+@use "../../styles/mixin";
+
+.projectCard {
+  @include mixin.spaceCard;
+display: flex;
+margin-bottom: 1rem;
+z-index: 3;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .projectImg {
+    width: 100px;
+    align-self: flex-start;
+    pointer-events: none;
+    opacity: 80%;
+    animation: opacity 2s;
+    @keyframes opacity {
+      0% {
+        opacity: 0%;
+      }
+
+      10% {
+        opacity: 50%;
+      }
+      20% {
+        opacity: 40%;
+      }
+      30% {
+        opacity: 60%;
+      }
+      40% {
+        opacity: 50%;
+      }
+      50% {
+        opacity: 60%;
+      }
+      60% {
+        opacity: 80%;
+      }
+      70% {
+        opacity: 79%;
+      }
+      80% {
+        opacity: 77%;
+      }
+      90% {
+        opacity: 80%;
+      }
+      100% {
+        opacity: 77%;
+      }
+    }
+  }
+}

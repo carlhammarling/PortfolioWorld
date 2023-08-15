@@ -1,20 +1,40 @@
 .header {
-    align-self: flex-start;
-    padding-bottom: 40px;
-    z-index: 3;
+  display: flex;
+  justify-content: space-between;
 
-  p {
-    color: rgb(219, 219, 219);
-    font-size: 12px;
-
-    font-weight: 300;
-  }
-
-
+  .headerLogo {
+      align-self: flex-start;
+      padding-bottom: 35px;
   
+    p {
+      color: rgb(219, 219, 219);
+      font-size: 12px;
+  
+      font-weight: 300;
+    }
+    // .logo2 {
+    //   font-size: 8.5px;
+    //   letter-spacing: 1px;
+    // }
+  }
+.headerContact {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .5rem;
 
-  .logo2 {
-    font-size: 8.5px;
-    letter-spacing: 1px;
+  i {
+    transition: .2s;
+      z-index: 3;
+
+
+    &:hover {
+      // transform: scale(1.1);
+      color: white;
+
+    }
   }
 }
+
+}
+

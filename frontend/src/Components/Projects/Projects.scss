@@ -1,3 +1,6 @@
+@use "../../styles/mixin";
+@import "../../styles/variables";
+
 .projects {
   align-self: center;
   display: flex;
@@ -16,20 +19,14 @@
     0% {
       opacity: 0;
       left: -400px;
+      height: 0%;
     }
     100% {
       opacity: 1;
       left: 0px;
+      height: 100%;
     }
   }
-  // @keyframes heightAnimation2 {
-  //   0% {
-  //     height: 0%;
-  //   }
-  //   100% {
-  //     height: 100%;
-  //   }
-  // }
 
   .projectsH2 {
     display: flex;
@@ -42,7 +39,30 @@
 
     gap: 1rem;
     padding-bottom: 1rem;
-    overflow: scroll;
+
+    .projectNav {
+      list-style: none;
+      display: flex;
+
+      button {
+        width: 30px;
+        position: relative;
+        background: $seeThrueWhite;
+        backdrop-filter: blur(3px);
+
+        border: 0;
+        color: $grayFont;
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        margin-right: 5px;
+        overflow: hidden;
+      }
+      .active {
+        color: white;
+        background: rgba(255, 255, 255, 0.248);
+      }
+    }
   }
 
   /* Change the color of the scrollbar track */
