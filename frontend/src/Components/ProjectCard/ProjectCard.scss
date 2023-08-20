@@ -3,6 +3,7 @@
 .projectCard {
   @include mixin.spaceCard;
 display: flex;
+gap: .3rem;
 margin-bottom: 1rem;
 z-index: 3;
 
@@ -10,7 +11,14 @@ z-index: 3;
     margin-bottom: 1rem;
   }
 
+  .projectLinks {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
   .projectImg {
+
     width: 100px;
     align-self: flex-start;
     pointer-events: none;

@@ -2,7 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ProjectCard.scss";
 
-const ProjectCard = ({ title, intro, description, tech, link, projectImg }) => {
+const ProjectCard = ({
+  title,
+  intro,
+  description,
+  tech,
+  link,
+  gitrep,
+  projectImg,
+}) => {
   return (
     <div className="projectCard">
       <div className="projectContent">
@@ -12,11 +20,18 @@ const ProjectCard = ({ title, intro, description, tech, link, projectImg }) => {
         </p>
         <p>{description}</p>
         <p>{tech}</p>
-        <Link to={link} target="blank">
-          Visit site
-        </Link>
+        <div className="projectLinks">
+          <Link to={link} target="blank">
+            Visit site
+          </Link>
+          <Link to={gitrep} target="blank">
+          View code
+          </Link>
+        </div>
       </div>
-      <img className="projectImg" src={projectImg} alt="" />
+      <Link to={link} target="blank">
+        <img className="projectImg" src={projectImg} alt={title} />
+      </Link>
     </div>
   );
 };

@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import "./Projects.scss";
 import { motion } from "framer-motion";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import cleanshirt from "../../assets/cleanshirt.png";
+import cleanShirt from "../../assets/cleanshirt.jpg";
 import HealthWeekly from "../../assets/HealthWeekly.png";
-import CMS from "../../assets/CMS.png";
+import CMS from "../../assets/CMS.jpg";
+import portfolio from "../../assets/portfolio.jpg";
 
 const Projects = () => {
   const [projNav, setProjNav] = useState("0");
@@ -19,7 +20,8 @@ const Projects = () => {
         "Fully functional E-Commerce website where you can view products, complete purchases, register users browse orders and even write reviews.",
       tech: "REACT - MONGODB - SASS - NODE.JS",
       link: "https://cleanshirt.carlhammarling.com/",
-      projectImg: cleanshirt,
+      gitrep: "https://github.com/carlhammarling/CleanShirtReact",
+      projectImg: cleanShirt,
     },
     {
       title: "Health Weekly",
@@ -28,6 +30,7 @@ const Projects = () => {
         "Thrue interviews, and by researching other food delivery apps I  created this app.",
       tech: "FIGMA - INTERVIEWS",
       link: "https://www.figma.com/file/kMdeUZuk9lGpsTvCicWwKT/Health-Weekly?type=design&node-id=0-1&mode=design&t=8dTUPSjS22dg3rGI-0",
+      gitrep: "https://github.com/carlhammarling/HealthWeekly",
       projectImg: HealthWeekly,
     },
     {
@@ -37,7 +40,18 @@ const Projects = () => {
         "A CMS-System where you can add and edit products, view orders and change statuses.",
       tech: "REACT - MONGODB - SASS - NODE.JS",
       link: "https://github.com/carlhammarling/ReactCMS",
+      gitrep: "https://github.com/carlhammarling/ReactCMS",
       projectImg: CMS,
+    },
+    {
+      title: "Portfolio",
+      intro: " - React portfolio.",
+      description:
+        "My goal with this portfolio was to create a creative yet simple design with a unique navigation and reusable components.",
+      tech: "REACT - SASS - FRAMER MOTION",
+      link: "https://tiny-salamander-617011.netlify.app/",
+      gitrep: "https://github.com/carlhammarling/PortfolioWorld",
+      projectImg: portfolio,
     },
   ]);
 
@@ -125,6 +139,7 @@ const Projects = () => {
           description={projectsArray[projNav].description}
           tech={projectsArray[projNav].tech}
           link={projectsArray[projNav].link}
+          gitrep={projectsArray[projNav].gitrep}
           projectImg={projectsArray[projNav].projectImg}
         />
       </motion.div>

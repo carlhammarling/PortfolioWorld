@@ -50,6 +50,13 @@ const About = ({ navigation }) => {
 
         {/* <Link to="">SEE MORE</Link> */}
         <div className="aboutNav">
+          <Link to="mailto:carlhammarling@gmail.com" target="blank">
+            <motion.i
+              class="fa-solid fa-square-envelope"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 1600, damping: 7 }}
+            ></motion.i>
+          </Link>
           <Link to="https://www.linkedin.com/in/carl-hammarling-66b084229/" target="blank">
             <motion.i
               class="fa-brands fa-linkedin"
@@ -60,13 +67,6 @@ const About = ({ navigation }) => {
           <Link to="https://github.com/carlhammarling" target="blank">
             <motion.i
               class="fa-brands fa-square-github"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 1600, damping: 7 }}
-            ></motion.i>
-          </Link>
-          <Link to="mailto:carlhammarling@gmail.com" target="blank">
-            <motion.i
-              class="fa-solid fa-square-envelope"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 1600, damping: 7 }}
             ></motion.i>

@@ -58,13 +58,56 @@ const Contact = ({ navigation }) => {
         dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
       >
         <p>
-          <span> Hey, write me a message!</span>, or even easier, connect with me on social media.
+          <span> Hey, lets talk!</span> Please send me a message on any of these medias.
         </p>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-
-        <Link to="">SEE MORE</Link>
+        <div className="link">
+          <Link to="mailto:carlhammarling@gmail.com" target="blank">
+            <motion.i
+              className="fa-solid fa-square-envelope"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 1600, damping: 7 }}
+            ></motion.i>
+          </Link>
+          <Link to="mailto:carlhammarling@gmail.com" className="contactInfo">
+            carlhammarling@gmail.com
+          </Link>
+        </div>
+        <div className="link">
+          <Link
+            to="https://www.linkedin.com/in/carl-hammarling-66b084229/"
+            target="blank"
+          >
+            <motion.i
+              className="fa-brands fa-linkedin"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 1600, damping: 7 }}
+            ></motion.i>
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/carl-hammarling-66b084229/"
+            className="contactInfo"
+          >
+            Linkedin/CarlHammarling
+          </Link>
+        </div>
+        <div className="link">
+          <Link
+            to="https://www.linkedin.com/in/carl-hammarling-66b084229/"
+            target="blank"
+          >
+            <motion.i
+              className="fa-brands fa-square-whatsapp"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 1600, damping: 7 }}
+            ></motion.i>
+          </Link>
+          <Link
+            to="https://wa.me/46793393457"
+            className="contactInfo"
+          >
+            +46793393457
+          </Link>
+        </div>
       </motion.div>
     </div>
   );

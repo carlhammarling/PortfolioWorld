@@ -13,8 +13,8 @@ const AboutPage1 = () => {
         creativity inscripted in my geenes.
       </p>
       <p>
-        I have been experimenting with design, art and music for as long as I
-        can remember, and I really love what I am doing!
+        I have been experimenting with design and music for as long as I
+        can remember, and I have a great understanding of signal flows. I really love what I am doing!
       </p>
       <Link to="https://drive.google.com/file/d/1942HjMYhScKtW_kCjAY54XpytuTTGkrb/view?usp=drive_link" target="blank">Download CV</Link>
     </div>
