@@ -5,6 +5,7 @@
   .headerLogo {
       align-self: flex-start;
       padding-bottom: 35px;
+
   
     p {
       color: rgb(219, 219, 219);
@@ -12,10 +13,10 @@
   
       font-weight: 300;
     }
-    // .logo2 {
-    //   font-size: 8.5px;
-    //   letter-spacing: 1px;
-    // }
+
+    @media (max-height: 600px) {
+      padding-bottom: 20px;
+    }
   }
 .headerContact {
   font-size: 1.5rem;

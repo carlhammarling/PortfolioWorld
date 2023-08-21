@@ -1,0 +1,76 @@
+@use "../../styles/mixin";
+@import "../../styles/variables";
+
+.tech {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  z-index: 3;
+  opacity: 1; /* Initially hidden */
+  animation: fadeAnimation 0.7s ease-in-out;
+
+  @keyframes fadeAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes heightAnimation {
+    0% {
+      height: 0%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+
+  .techH2 {
+    display: flex;
+  }
+
+  .techText {
+    @include mixin.spaceCard;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+
+    animation: heightAnimation 1s ease-in-out;
+
+    .techGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+      place-items: center;
+    }
+
+    .techItem {
+      display: grid;
+      place-items: center;
+      gap: .1rem;
+      height: 60px;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        color: white;
+        scale: 1.02;
+      }
+      
+      img {
+        width: 50px;
+      }
+      .invertImg {
+        filter: invert(1);
+      }
+
+      .framerMotion {
+        width: 20px;
+      }
+    }
+  }
+}

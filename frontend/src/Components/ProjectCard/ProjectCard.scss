@@ -4,7 +4,6 @@
   @include mixin.spaceCard;
 display: flex;
 gap: .3rem;
-margin-bottom: 1rem;
 z-index: 3;
 
   p {
@@ -15,6 +14,18 @@ z-index: 3;
     display: flex;
     gap: 0.5rem;
     align-items: center;
+  }
+  .techUsed {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .mongoDb {
+    width: 50px;
+    filter: invert(1);
+  }
+  .framerMotion {
+    width: 20px;
   }
 
   .projectImg {

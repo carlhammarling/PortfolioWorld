@@ -17,18 +17,74 @@ const Projects = () => {
       title: "Clean Shirt",
       intro: " - Fullstack MERN application.",
       description:
-        "Fully functional E-Commerce website where you can view products, complete purchases, register users browse orders and even write reviews.",
-      tech: "REACT - MONGODB - SASS - NODE.JS",
-      link: "https://cleanshirt.carlhammarling.com/",
+        "Fully functional E-Commerce where you can make purchases, register users, browse orders and review products.",
+      tech: (
+        <>
+          <div>
+            <i className="fa-brands fa-react fa-xl"></i>
+          </div>
+          <div>
+            <i className="fa-brands fa-node fa-xl"></i>
+          </div>
+          <div>
+            <i className="fa-brands fa-sass fa-xl"></i>
+          </div>
+          <img
+            className="mongoDb"
+            src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress"
+            alt=""
+          />
+        </>
+      ),
+      link: "https://cleanshirt-backagain.onrender.com/",
       gitrep: "https://github.com/carlhammarling/CleanShirtReact",
       projectImg: cleanShirt,
+    },
+    {
+      title: "Portfolio",
+      intro: " - React portfolio.",
+      description:
+        "My goal with this portfolio was to create a creative yet simple design with a unique navigation and reusable components.",
+      tech: (
+        <>
+          <div>
+            <i className="fa-brands fa-react fa-xl"></i>
+          </div>
+          <div>
+            <i className="fa-brands fa-sass fa-xl"></i>
+          </div>
+          <img
+            className="framerMotion"
+            src="https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png"
+            alt="Framer Motion"
+          />
+          <div>
+            <i class="fa-brands fa-figma fa-xl"></i>
+          </div>
+        </>
+      ),
+      link: "https://tiny-salamander-617011.netlify.app/",
+      gitrep: "https://github.com/carlhammarling/PortfolioWorld",
+      projectImg: portfolio,
     },
     {
       title: "Health Weekly",
       intro: " - UX/UI research project.",
       description:
         "Thrue interviews, and by researching other food delivery apps I  created this app.",
-      tech: "FIGMA - INTERVIEWS",
+      tech: (
+        <>
+          <div>
+            <i className="fa-brands fa-react fa-xl"></i>
+          </div>
+          <div>
+            <i className="fa-brands fa-sass fa-xl"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-figma fa-xl"></i>
+          </div>
+        </>
+      ),
       link: "https://www.figma.com/file/kMdeUZuk9lGpsTvCicWwKT/Health-Weekly?type=design&node-id=0-1&mode=design&t=8dTUPSjS22dg3rGI-0",
       gitrep: "https://github.com/carlhammarling/HealthWeekly",
       projectImg: HealthWeekly,
@@ -38,20 +94,27 @@ const Projects = () => {
       intro: " - Fullstack CMS-system.",
       description:
         "A CMS-System where you can add and edit products, view orders and change statuses.",
-      tech: "REACT - MONGODB - SASS - NODE.JS",
+      tech: (
+        <>
+          <div>
+            <i className="fa-brands fa-react fa-xl"></i>
+          </div>
+          <div>
+            <i className="fa-brands fa-node fa-xl"></i>
+          </div>
+          <div>
+            <i className="fa-brands fa-sass fa-xl"></i>
+          </div>
+          <img
+            className="mongoDb"
+            src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress"
+            alt=""
+          />
+        </>
+      ),
       link: "https://github.com/carlhammarling/ReactCMS",
       gitrep: "https://github.com/carlhammarling/ReactCMS",
       projectImg: CMS,
-    },
-    {
-      title: "Portfolio",
-      intro: " - React portfolio.",
-      description:
-        "My goal with this portfolio was to create a creative yet simple design with a unique navigation and reusable components.",
-      tech: "REACT - SASS - FRAMER MOTION",
-      link: "https://tiny-salamander-617011.netlify.app/",
-      gitrep: "https://github.com/carlhammarling/PortfolioWorld",
-      projectImg: portfolio,
     },
   ]);
 

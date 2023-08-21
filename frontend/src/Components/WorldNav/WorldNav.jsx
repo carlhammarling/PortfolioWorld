@@ -152,7 +152,7 @@ const WorldNav = ({ setNavigation, navigation }) => {
             <li id="nav1" className={navigation === 'homeNav' ? 'active' : ''} onClick={() => setNavigation('homeNav')}>Home</li>
             <li id="nav2" className={navigation === 'projectsNav' ? 'active' : ''} onClick={() => setNavigation('projectsNav')}>Projects</li>
             <li id="nav3" className={navigation === 'aboutNav' ? 'active' : ''} onClick={() => setNavigation('aboutNav')}>About</li>
-            <li id="nav4" className={navigation === 'contactNav' ? 'active' : ''} onClick={() => setNavigation('contactNav')}>Contact</li>
+            <li id="nav4" className={navigation === 'techNav' ? 'active' : ''} onClick={() => setNavigation('techNav')}>Tech</li>
         </ul>
         <img className="skyltar" src={skyltar} alt="" />
       </nav>

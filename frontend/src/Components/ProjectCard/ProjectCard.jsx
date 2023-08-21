@@ -19,7 +19,7 @@ const ProjectCard = ({
           {intro}
         </p>
         <p>{description}</p>
-        <p>{tech}</p>
+        <p className="techUsed">{tech}</p>
         <div className="projectLinks">
           <Link to={link} target="blank">
             Visit site

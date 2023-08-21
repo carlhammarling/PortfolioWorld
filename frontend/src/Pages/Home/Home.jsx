@@ -7,6 +7,7 @@ import Welcome from "../../Components/Welcome/Welcome";
 import About from "../../Components/About/About";
 import Projects from "../../Components/Projects/Projects";
 import Contact from "../../Components/Contact/Contact";
+import Tech from "../../Components/Tech/Tech";
 
 const Home = () => {
   const [navigation, setNavigation] = useState("homeNav");
@@ -26,8 +27,9 @@ const Home = () => {
           <About />
         ) : navigation === "projectsNav" ? (
           <Projects />
-        ) : navigation === "contactNav" ? (
-          <Contact />
+        ) : navigation === "techNav" ? (
+          // <Contact />
+          <Tech />
         ) : (
           <h1>404</h1>
         )}

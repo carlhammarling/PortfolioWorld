@@ -3,6 +3,8 @@
 .wrapper {
   background: rgb(0, 0, 0);
   background: $spaceBackground2;
+  position: relative;
+
 }
 .home {
   min-height: 100dvh;
@@ -10,12 +12,22 @@
   color: rgb(222, 221, 221);
 
   padding: 40px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
   // align-items: center;
 
+  
+  @media (max-height: 600px) {
+    padding: 20px;
+  }
+  @media (max-height: 680px) {
+    padding: 35px;
+  }
+
+  //Larger screens
   @media (min-width: 500px) {
     padding: 40px 100px;
   }
@@ -31,12 +43,20 @@
   @media (min-width: 1200px) {
     padding: 60px 400px;
   }
+  @media (min-width: 1400px) {
+    padding: 60px 500px;
+  }
+}
+
+.home > :nth-child(2) {
+  @media (max-height: 600px) {
+    gap: 10px;
+  }
 }
 
 .world {
   position: absolute;
   overflow: hidden;
-  // z-index: 1;
 
   bottom: 0;
   width: 100%;
