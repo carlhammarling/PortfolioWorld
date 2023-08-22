@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import AboutPage1 from "./AboutPage1/AboutPage1";
+import profile from "../../assets/PortfolioProfile.png";
 
 const About = ({ navigation }) => {
   return (
@@ -40,13 +40,26 @@ const About = ({ navigation }) => {
         </motion.h2>
       </div>
 
-      <motion.div
-        className="aboutText"
-        drag
-        dragSnapToOrigin
-        dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
-      >
-        <AboutPage1 />
+      <div className="aboutText">
+        <div className="aboutPage1">
+          <img className="profile" src={profile} alt="" />
+
+          <p>
+            <span> Hi! I am Carl</span>, a 34 year old frontend developer who
+            has creativity inscripted in my geenes.
+          </p>
+          <p>
+            I have been experimenting with design and music for as long as I can
+            remember, and I have a great understanding of signal flows. I really
+            love what I am doing!
+          </p>
+          <Link
+            to="https://drive.google.com/file/d/1FEjXzTACq8XHqnlWLHiECFNYrbhHBqTx/view?usp=drive_link"
+            target="blank"
+          >
+            Download CV
+          </Link>
+        </div>
 
         {/* <Link to="">SEE MORE</Link> */}
         <div className="aboutNav">
@@ -57,7 +70,10 @@ const About = ({ navigation }) => {
               transition={{ type: "spring", stiffness: 1600, damping: 7 }}
             ></motion.i>
           </Link>
-          <Link to="https://www.linkedin.com/in/carl-hammarling-66b084229/" target="blank">
+          <Link
+            to="https://www.linkedin.com/in/carl-hammarling-66b084229/"
+            target="blank"
+          >
             <motion.i
               class="fa-brands fa-linkedin"
               whileHover={{ scale: 1.05 }}
@@ -72,7 +88,7 @@ const About = ({ navigation }) => {
             ></motion.i>
           </Link>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

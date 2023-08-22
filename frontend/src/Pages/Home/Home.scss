@@ -7,7 +7,8 @@
 
 }
 .home {
-  min-height: 100dvh;
+  height: 100dvh;
+  min-height: 650px;
   color: white;
   color: rgb(222, 221, 221);
 
@@ -20,9 +21,6 @@
   // align-items: center;
 
   
-  @media (max-height: 600px) {
-    padding: 20px;
-  }
   @media (max-height: 680px) {
     padding: 35px;
   }
@@ -45,12 +43,6 @@
   }
   @media (min-width: 1400px) {
     padding: 60px 500px;
-  }
-}
-
-.home > :nth-child(2) {
-  @media (max-height: 600px) {
-    gap: 10px;
   }
 }
 

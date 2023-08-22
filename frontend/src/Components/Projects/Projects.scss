@@ -9,10 +9,10 @@
   width: 100%;
   margin-top: 90px;
   z-index: 3;
-  position: relative; /* Add this line */
-  left: 0px; /* Add this line */
+  position: relative;
+  left: 0px; 
 
-  opacity: 1; /* Initially hidden */
+  opacity: 1; 
   animation: fadeAnimation2 0.7s ease-in-out;
 
   @keyframes fadeAnimation2 {
@@ -57,11 +57,5 @@
         background: rgba(255, 255, 255, 0.248);
       }
     }
-  }
-
-  /* Change the color of the scrollbar track */
-  ::-webkit-scrollbar {
-    width: 0px; /* width of the scrollbar */
-    height: 0px;
   }
 }

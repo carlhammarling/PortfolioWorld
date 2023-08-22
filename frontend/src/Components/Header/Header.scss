@@ -13,10 +13,6 @@
   
       font-weight: 300;
     }
-
-    @media (max-height: 600px) {
-      padding-bottom: 20px;
-    }
   }
 .headerContact {
   font-size: 1.5rem;
@@ -30,7 +26,6 @@
 
 
     &:hover {
-      // transform: scale(1.1);
       color: white;
 
     }

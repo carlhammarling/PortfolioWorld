@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Projects.scss";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import cleanShirt from "../../assets/cleanshirt.jpg";
 import HealthWeekly from "../../assets/HealthWeekly.png";
@@ -174,12 +174,7 @@ const Projects = () => {
         <span>A selection of projects </span>
         I've been working on lately.
       </p>
-      <motion.div
-        className="cardCaroussel"
-        drag
-        dragSnapToOrigin
-        dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
-      >
+      <div className="cardCaroussel">
         {/* Maps out a navigation for each Projecct in the array */}
         <ul className="projectNav">
           {projectsArray &&
@@ -205,7 +200,7 @@ const Projects = () => {
           gitrep={projectsArray[projNav].gitrep}
           projectImg={projectsArray[projNav].projectImg}
         />
-      </motion.div>
+      </div>
     </motion.div>
   );
 };

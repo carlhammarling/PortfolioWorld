@@ -2,9 +2,9 @@
 
 .projectCard {
   @include mixin.spaceCard;
-display: flex;
-gap: .3rem;
-z-index: 3;
+  display: flex;
+  gap: 0.3rem;
+  z-index: 3;
 
   p {
     margin-bottom: 1rem;
@@ -17,7 +17,7 @@ z-index: 3;
   }
   .techUsed {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   .mongoDb {
@@ -29,7 +29,6 @@ z-index: 3;
   }
 
   .projectImg {
-
     width: 100px;
     align-self: flex-start;
     pointer-events: none;

@@ -6,7 +6,6 @@ import WorldNav from "../../Components/WorldNav/WorldNav";
 import Welcome from "../../Components/Welcome/Welcome";
 import About from "../../Components/About/About";
 import Projects from "../../Components/Projects/Projects";
-import Contact from "../../Components/Contact/Contact";
 import Tech from "../../Components/Tech/Tech";
 
 const Home = () => {
