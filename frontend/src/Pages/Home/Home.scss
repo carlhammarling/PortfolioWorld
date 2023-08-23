@@ -7,9 +7,8 @@
 
 }
 .home {
-  height: 100dvh;
-  min-height: 650px;
   color: white;
+  min-height: 100vh;
   color: rgb(222, 221, 221);
 
   padding: 40px;
@@ -18,7 +17,6 @@
   flex-direction: column;
   justify-content: flex-start;
 
-  // align-items: center;
 
   
   @media (max-height: 680px) {

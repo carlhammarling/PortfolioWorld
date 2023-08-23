@@ -33,11 +33,8 @@ const Tech = ({ navigation }) => {
         </motion.h2>
       </div>
 
-      <motion.div
+      <div
         className="techText"
-        drag
-        dragSnapToOrigin
-        dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
       >
         <p>
           <span>Here are some</span> of the techniques and
@@ -120,7 +117,7 @@ const Tech = ({ navigation }) => {
             <p>Trello</p>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

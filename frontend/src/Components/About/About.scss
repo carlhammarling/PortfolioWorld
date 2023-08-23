@@ -94,14 +94,16 @@
       }
     }
   }
+  
 
   .aboutNav {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: .7rem;
+    margin-top: 1rem;
 
-    a {
-      font-size: 1.5rem;
+    i {
+      font-size: 2rem;
     }
   }
 }
