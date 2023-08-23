@@ -1,10 +1,15 @@
 @use "../../styles/mixin";
 
+
+
 .projectCard {
   @include mixin.spaceCard;
   display: flex;
   gap: 0.3rem;
   z-index: 3;
+
+
+
   p {
     margin-bottom: 1rem;
   }

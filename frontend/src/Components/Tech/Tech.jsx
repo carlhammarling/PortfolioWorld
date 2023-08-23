@@ -4,42 +4,29 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Tech = ({ navigation }) => {
+  const title = ["T", "e", "c", "h"];
+
   return (
     <div className="tech">
+      {/* Title-animation  */}
       <div className="techH2">
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          T
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          e
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          c
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          h
-        </motion.h2>
+        {title &&
+          title.map((letter) => (
+            <motion.h2
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 1200, damping: 5 }}
+            >
+              {letter}
+            </motion.h2>
+          ))}
       </div>
 
-      <div
-        className="techText"
-      >
-        <p>
-          <span>Here are some</span> of the techniques and
-          tools that I am using.
-        </p>
+      <p>
+        <span>Here are some</span> of the techniques and tools that I am using.
+      </p>
+
+      {/* Card beggining */}
+      <div className="techText">
         <div className="techGrid">
           <div className="techItem">
             <div className="iconContainer">

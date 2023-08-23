@@ -5,41 +5,24 @@ import { motion } from "framer-motion";
 import profile from "../../assets/PortfolioProfile.png";
 
 const About = ({ navigation }) => {
+  const title = ["A", "b", "o", "u", "t"];
+
   return (
     <div className="about">
+      {/* Title-animation */}
       <div className="aboutH2">
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          A
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          b
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          o
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          u
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          t
-        </motion.h2>
+        {title &&
+          title.map((letter) => (
+            <motion.h2
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 1200, damping: 5 }}
+            >
+              {letter}
+            </motion.h2>
+          ))}
       </div>
 
+      {/* Card-beggining */}
       <div className="aboutText">
         <div className="aboutPage1">
           <img className="profile" src={profile} alt="" />
@@ -61,7 +44,6 @@ const About = ({ navigation }) => {
           </Link>
         </div>
 
-        {/* <Link to="">SEE MORE</Link> */}
         <div className="aboutNav">
           <Link to="mailto:carlhammarling@gmail.com" target="blank">
             <motion.i

@@ -9,6 +9,8 @@ import CMS from "../../assets/CMS.jpg";
 import portfolio from "../../assets/portfolio.jpg";
 
 const Projects = () => {
+  const title = ["P", "r", "o", "j", "e", "c", "t", "s"];
+
   const [projNav, setProjNav] = useState("0");
 
   //Array of all projects
@@ -120,60 +122,24 @@ const Projects = () => {
 
   return (
     <motion.div className="projects">
+      {/* Title-animation  */}
       <div className="projectsH2">
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          P
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          r
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          o
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          j
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          e
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          c
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          t
-        </motion.h2>
-        <motion.h2
-          whileHover={{ scale: 1.1 }}
-          transition={{ type: "spring", stiffness: 1200, damping: 5 }}
-        >
-          s
-        </motion.h2>
+        {title &&
+          title.map((letter) => (
+            <motion.h2
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 1200, damping: 5 }}
+            >
+              {letter}
+            </motion.h2>
+          ))}
       </div>
       <p>
         <span>A selection of projects </span>
         I've been working on lately.
       </p>
+
+      {/* Card-beggining */}
       <div className="cardCaroussel">
         {/* Maps out a navigation for each Projecct in the array */}
         <ul className="projectNav">

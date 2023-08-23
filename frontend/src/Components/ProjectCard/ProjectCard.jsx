@@ -12,7 +12,8 @@ const ProjectCard = ({
   projectImg,
 }) => {
   return (
-    <div className="projectCard">
+    // <div className="projectCard">
+    <div className={`projectCard ${title}`}>
       <div className="projectContent">
         <p>
           <span>{title}</span>
