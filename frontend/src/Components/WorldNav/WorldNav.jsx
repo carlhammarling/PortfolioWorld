@@ -1,23 +1,9 @@
 import React, { useState } from "react";
 import "./WorldNav.scss";
 import skyltar from "../../assets/skyltar.png";
-import { motion } from "framer-motion"
-import click from '../../assets/click.mp3'
 
 
 const WorldNav = ({ setNavigation, navigation }) => {
-
-  const [soundFX, setSoundFX] = useState(false)
-
-  const playFX = () => {
-    const audio = new Audio(click);
-    audio.play();
-    setSoundFX(true);
-
-    audio.addEventListener('ended', () => {
-      setSoundFX(false)
-    })
-  }
 
 
   return (
