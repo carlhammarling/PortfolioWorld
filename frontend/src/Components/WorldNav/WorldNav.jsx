@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WorldNav.scss";
 import skyltar from "../../assets/skyltar.png";
 import { motion } from "framer-motion"
+import click from '../../assets/click.mp3'
 
 
 const WorldNav = ({ setNavigation, navigation }) => {
+
+  const [soundFX, setSoundFX] = useState(false)
+
+  const playFX = () => {
+    const audio = new Audio(click);
+    audio.play();
+    setSoundFX(true);
+
+    audio.addEventListener('ended', () => {
+      setSoundFX(false)
+    })
+  }
 
 
   return (
@@ -149,10 +162,10 @@ const WorldNav = ({ setNavigation, navigation }) => {
 
       <nav>
         <ul>
-            <li id="nav1" className={navigation === 'homeNav' ? 'active' : ''} onClick={() => setNavigation('homeNav')}>Home</li>
-            <li id="nav2" className={navigation === 'projectsNav' ? 'active' : ''} onClick={() => setNavigation('projectsNav')}>Projects</li>
-            <li id="nav3" className={navigation === 'aboutNav' ? 'active' : ''} onClick={() => setNavigation('aboutNav')}>About</li>
-            <li id="nav4" className={navigation === 'techNav' ? 'active' : ''} onClick={() => setNavigation('techNav')}>Tech</li>
+            <li id="nav1" className={navigation === 'homeNav' ? 'active' : ''} onClick={() => {setNavigation('homeNav'); playFX();}}>Home</li>
+            <li id="nav2" className={navigation === 'projectsNav' ? 'active' : ''} onClick={() => {setNavigation('projectsNav'); playFX();}}>Projects</li>
+            <li id="nav3" className={navigation === 'aboutNav' ? 'active' : ''} onClick={() => {setNavigation('aboutNav'); playFX();}}>About</li>
+            <li id="nav4" className={navigation === 'techNav' ? 'active' : ''} onClick={() => {setNavigation('techNav'); playFX();}}>Tech</li>
         </ul>
         <img className="skyltar" src={skyltar} alt="" />
       </nav>
