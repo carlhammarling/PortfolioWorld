@@ -4,6 +4,7 @@
   background: rgb(0, 0, 0);
   background: $spaceBackground2;
   position: relative;
+
 }
 .home {
   color: white;
@@ -20,6 +21,10 @@
     max-width: 500px;
     margin-inline: auto;
   }
+
+
+  
+
 
   //Larger screens
   @media (min-width: 374px) {
@@ -53,51 +58,50 @@
 
 .noise {
   position: fixed;
-  top: -2900px;
-  left: -1600px;
-  height: 800%;
-  width: 600%;
+  top: -50%;
+  left: -50%;
+  height: 200dvh;
+  width: 200dvw;
   pointer-events: none;
   background-image: url(../../assets/noise.png);
   background-size: 200px;
   background-repeat: repeat;
-  opacity: 0.2;
-  // opacity: 0.3;
+  opacity: 0.15;
   animation: grain 1s infinite linear;
 
   @keyframes grain {
     0% {
-      transform: translate(-0%, -3%);
+      transform: translate(-0%, -0%);
     }
     10% {
-      transform: translate(2%, 3%);
+      transform: translate(5%, 5%);
     }
     20% {
-      transform: translate(-2%, -5%);
+      transform: translate(-5%, -5%);
     }
     30% {
-      transform: translate(2%, -3%);
+      transform: translate(8%, -10%);
     }
     40% {
-      transform: translate(-1%, 3%);
+      transform: translate(-7%, 3%);
     }
     50% {
-      transform: translate(-5%, 1%);
+      transform: translate(10%, -6%);
     }
     60% {
-      transform: translate(3%, -2%);
+      transform: translate(3%, 7%);
     }
     70% {
-      transform: translateY(3%, 3%);
+      transform: translateY(8%, 0%);
     }
     80% {
-      transform: translate(1%, 5%);
+      transform: translate(1%, -10%);
     }
     90% {
-      transform: translate(-3%, 3%);
+      transform: translate(-10%, 8%);
     }
     100% {
-      transform: translate(-1%, 2%);
+      transform: translate(-2%, 0%);
     }
   }
 }

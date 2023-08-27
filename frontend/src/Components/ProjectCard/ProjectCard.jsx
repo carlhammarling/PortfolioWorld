@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { ThreeCircles } from "react-loader-spinner";
 import { Link } from "react-router-dom";
 import "./ProjectCard.scss";
 
@@ -11,8 +12,20 @@ const ProjectCard = ({
   gitrep,
   projectImg,
 }) => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
+  useEffect(() => {
+    setImgLoaded(false);
+
+    const img = new Image();
+    img.src = projectImg;
+
+    img.onload = () => {
+      setImgLoaded(true);
+    };
+  }, [projectImg]);
+
   return (
-    // <div className="projectCard">
     <div className={`projectCard ${title}`}>
       <div className="projectContent">
         <p>
@@ -26,12 +39,30 @@ const ProjectCard = ({
             Visit site
           </Link>
           <Link to={gitrep} target="blank">
-          View code
+            View code
           </Link>
         </div>
       </div>
       <Link to={link} target="blank">
-        <img className="projectImg" src={projectImg} alt={title} />
+        {imgLoaded ? (
+          <img className="projectImg" src={projectImg} alt={title} />
+        ) : (
+          <div className="loading">
+            <ThreeCircles
+              className="spinner"
+              height="50"
+              width="50"
+              color="#ffffff"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel="three-circles-rotating"
+              outerCircleColor=""
+              innerCircleColor=""
+              middleCircleColor=""
+            />
+          </div>
+        )}
       </Link>
     </div>
   );

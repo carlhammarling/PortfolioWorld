@@ -13,7 +13,6 @@
   z-index: 3;
   animation: fadeAnimation 0.7s ease-in-out;
 
-
   .aboutH2 {
     display: flex;
   }
@@ -25,14 +24,13 @@
     overflow: hidden;
     animation: heightAnimation 1s ease-in-out;
 
-
-
     .aboutPage1 {
       p {
         margin-bottom: 1rem;
       }
 
-      .profile {
+      .profile,
+      .loading {
         width: 110px;
         float: right;
         pointer-events: none;
@@ -77,14 +75,17 @@
           }
         }
       }
+
+      .loading {
+        padding: 20px;
+      }
     }
   }
-  
 
   .aboutNav {
     display: flex;
     justify-content: center;
-    gap: .7rem;
+    gap: 0.7rem;
     margin-top: 1rem;
 
     i {

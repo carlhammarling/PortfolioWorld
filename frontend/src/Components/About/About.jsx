@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { ThreeCircles } from 'react-loader-spinner';
 import "./About.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -6,6 +7,17 @@ import profile from "../../assets/PortfolioProfile.png";
 
 const About = ({ navigation }) => {
   const title = ["A", "b", "o", "u", "t"];
+
+  const [imgLoaded, setImgLoaded] = useState(false)
+
+
+  const img = new Image();
+  img.src = profile;
+  img.onload = () => {
+
+      setImgLoaded(true)
+  }
+
 
   return (
     <div className="about">
@@ -25,7 +37,25 @@ const About = ({ navigation }) => {
       {/* Card-beggining */}
       <div className="aboutText">
         <div className="aboutPage1">
-          <img className="profile" src={profile} alt="" />
+          {imgLoaded ? (
+            <img className="profile" src={profile} alt="" />
+          ) : (
+            <div className="loading">
+            <ThreeCircles
+              className="spinner"
+              height="50"
+              width="50"
+              color="#ffffff"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel="three-circles-rotating"
+              outerCircleColor=""
+              innerCircleColor=""
+              middleCircleColor=""
+            />
+          </div>
+          )}
 
           <p>
             <span> Hi! I am Carl</span>, a 34 year old frontend developer who
